@@ -3,8 +3,11 @@ package eva.dummy.dao;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.lang.Enum;
+
 
 import eva.dummy.domain.*;
+import eva.dummy.domain.Person;
 import eva.dummy.utility.DatabaseConnectionClass;
 import eva.dummy.utility.LogConnection;
 
@@ -17,9 +20,8 @@ public class PersonDAOImp implements PersonDAO {
 		Person person1 = new Person.PersonBuilder().build(); 
 		String query = "SELECT * FROM person WHERE person_id = ?";
 
-		try(
-				Connection connection = DatabaseConnectionClass.getConnection();
-				PreparedStatement preparedStatement = connection.prepareStatement(query); ) {
+		try(Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(query); ) {
 
 			preparedStatement.setInt(1, person.getPersonId());
 
@@ -27,7 +29,12 @@ public class PersonDAOImp implements PersonDAO {
 				
 				Person.PersonBuilder buildert = new Person.PersonBuilder();
 				
+//param = Enum.valueOf((Class<? extends Enum>)dbField.getField().getType(), (String) param);	
+//	where param is the value of the field in the db , and the dbField 
+				//is the java.reflect.util.Field , where to put the value to
+				
 				buildert.setPersonId(resultSet.getInt(1));
+				buildert.setPersonType( Enum.valueOf(TypeOfPerson, resultSet.getString(2)));
 				buildert.setName(resultSet.getString(2));
 				buildert.setLastName(resultSet.getString(3));
 				
@@ -60,7 +67,6 @@ public class PersonDAOImp implements PersonDAO {
 			preparedStatement.setString(2, person.getName());
 			preparedStatement.setString(3, person.getLastName());
 			
-
 			preparedStatement.executeUpdate();
 
 			System.out.println("Person succesfully created");
@@ -75,8 +81,8 @@ public class PersonDAOImp implements PersonDAO {
 					
 					Person.PersonBuilder buildert = new Person.PersonBuilder().setPersonId(generatedId).
 							setPersonType(person.getPersonType()).setName(person.getName()).setLastName(person.getLastName());
-					person = buildert.build();
 					
+					person = buildert.build();
 				}
 			}
 
@@ -88,10 +94,26 @@ public class PersonDAOImp implements PersonDAO {
 	}
 
 
-
-
 	public Person updateDatabasePerson(Person person) {
-		// TODO Auto-generated method stub
+		
+		String tempEnum = "" + person.getPersonType();
+		String query = "UPDATE person SET person_type = ?, name = ?, lastname = ?"
+				+ "WHERE person_id = ?";
+		
+		try(Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(query);) {
+			
+				preparedStatement.setString(1, tempEnum);
+				preparedStatement.setString(2, person.getName());
+				preparedStatement.setString(3,  person.getLastName());
+				
+				preparedStatement.executeUpdate();
+				logger.log(Level.INFO, "Person successfully updated");
+				
+				
+		} catch(SQLException e) {
+			logger.log(Level.WARNING, "Person couldn't been updated", e);
+		}
 		return null;
 	}
 

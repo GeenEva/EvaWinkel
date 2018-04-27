@@ -4,14 +4,14 @@ import eva.dummy.domain.Person.*;
 
 public class EvaWinkeltjeTest {
 	public static void main(String[] args) {
-		
+		/*
 		Person persontje = new Person.PersonBuilder().
 				setPersonType(TypeOfPerson.BOSS).setName("Lotje").setLastName("Lepel").build();
 		
 	
 		System.out.println(persontje.toString());
 		
-		PersonDAO personDAO = new PersonDAOImp();
+		
 		
 		Person persontje2 = personDAO.createDatabasePerson(persontje);
 		
@@ -31,11 +31,25 @@ public class EvaWinkeltjeTest {
 		
 		Person persontje3 = new Person.PersonBuilder().
 				setPersonType(TypeOfPerson.SLAVE).setName("Piet").setLastName("de Vork").build();
+		*/
+		
+		PersonDAO personDAO = new PersonDAOImp();
+		
+		Person persontje3 = new Person.PersonBuilder().setPersonId(12).build();
+		
+	System.out.println(persontje3.toString());	
+	
+		Person persontje4 = personDAO.getDatabasePerson(persontje3);
 		
 		
-		
-		Person persontje4 = personDAO.createDatabasePerson(persontje3);
 		
 	System.out.println(persontje4.toString());
+	
+		Person person5 = new Person.PersonBuilder().setPersonId(persontje4.getPersonId()).
+				setPersonType(persontje4.getPersonType()).
+				setName(persontje4.getName()).setLastName("de Haan").build();
+	
+		personDAO.updateDatabasePerson(person5);
+	
 	}
 }

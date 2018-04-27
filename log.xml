@@ -1417,3 +1417,191 @@ Apr 27, 2018 4:09:23 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
 INFO: Person succesfully created
 Apr 27, 2018 4:09:23 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
 INFO: Key succesfully generated
+Apr 27, 2018 7:36:56 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 7:36:57 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 7:36:57 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+INFO: Person succesfully created
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+WARNING: SQL Exception occured while trying to make an address
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.AddressDAOImp.createDatabaseAddress(AddressDAOImp.java:77)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:27)
+
+Apr 27, 2018 7:36:57 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 7:36:57 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 7:37:41 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 7:37:41 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 7:37:41 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+INFO: Person succesfully created
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+WARNING: SQL Exception occured while trying to make an address
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.AddressDAOImp.createDatabaseAddress(AddressDAOImp.java:77)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:27)
+
+Apr 27, 2018 7:37:41 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 7:37:41 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 8:23:51 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 8:23:51 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 8:23:51 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+INFO: Person succesfully created
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+WARNING: SQL Exception occured while trying to make an address
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.AddressDAOImp.createDatabaseAddress(AddressDAOImp.java:77)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:27)
+
+Apr 27, 2018 8:23:51 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 8:23:51 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:23:51 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:102)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:46)
+
+Apr 27, 2018 8:24:14 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 8:24:14 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 8:24:14 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+INFO: Person succesfully created
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+WARNING: SQL Exception occured while trying to make an address
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.AddressDAOImp.createDatabaseAddress(AddressDAOImp.java:77)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:27)
+
+Apr 27, 2018 8:24:14 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 27, 2018 8:24:14 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:24:14 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:102)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:46)
+
+Apr 27, 2018 8:30:22 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 8:30:22 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:30:22 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+WARNING: SQL exception occured
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.PersonDAOImp.getDatabasePerson(PersonDAOImp.java:29)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:40)
+
+Apr 27, 2018 8:31:08 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 27, 2018 8:31:09 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 27, 2018 8:31:09 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+WARNING: SQL exception occured
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.PersonDAOImp.getDatabasePerson(PersonDAOImp.java:29)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:42)
+

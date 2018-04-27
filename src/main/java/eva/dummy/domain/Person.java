@@ -3,10 +3,11 @@ package eva.dummy.domain;
 
 public class Person {
 	
-	//Data fields for Person
-	
-	private int personId;
+	//Enum type
 	public enum TypeOfPerson{BOSS, SLAVE};
+	
+	//Data fields for Person
+	private int personId;
 	private TypeOfPerson personType;
 	private String name;
 	private String lastName;
