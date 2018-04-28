@@ -32,10 +32,10 @@ public class EvaWinkeltjeTest {
 		Person persontje3 = new Person.PersonBuilder().
 				setPersonType(TypeOfPerson.SLAVE).setName("Piet").setLastName("de Vork").build();
 		*/
-		
+		/*
 		PersonDAO personDAO = new PersonDAOImp();
 		
-		Person persontje3 = new Person.PersonBuilder().setPersonId(12).build();
+		Person persontje3 = new Person.PersonBuilder().setPersonId(13).build();
 		
 	System.out.println(persontje3.toString());	
 	
@@ -44,12 +44,15 @@ public class EvaWinkeltjeTest {
 		
 		
 	System.out.println(persontje4.toString());
-	
-		Person person5 = new Person.PersonBuilder().setPersonId(persontje4.getPersonId()).
-				setPersonType(persontje4.getPersonType()).
-				setName(persontje4.getName()).setLastName("de Haan").build();
+	*/
+		PersonDAO personDAO = new PersonDAOImp();
+		Person person5 = new Person.PersonBuilder().setPersonId(10).
+				setPersonType(TypeOfPerson.CLOWN).
+				setName("Aardbei").setLastName("Dreumes").build();
 	
 		personDAO.updateDatabasePerson(person5);
+		
+		
 	
 	}
 }

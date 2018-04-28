@@ -1605,3 +1605,232 @@ java.sql.SQLException: Before start of result set
 	at eva.dummy.dao.PersonDAOImp.getDatabasePerson(PersonDAOImp.java:29)
 	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:42)
 
+Apr 28, 2018 3:20:18 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:20:18 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:20:18 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+WARNING: SQL exception occured
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.PersonDAOImp.getDatabasePerson(PersonDAOImp.java:33)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:42)
+
+Apr 28, 2018 3:27:06 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:27:06 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:27:06 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+WARNING: SQL exception occured
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.PersonDAOImp.getDatabasePerson(PersonDAOImp.java:33)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:43)
+
+Apr 28, 2018 3:31:30 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:31:31 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:31:31 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+INFO: Person succesfully returned
+Apr 28, 2018 3:31:31 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:31:31 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:109)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:53)
+
+Apr 28, 2018 3:55:07 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:55:07 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:55:07 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+INFO: Person succesfully returned
+Apr 28, 2018 3:55:07 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:55:07 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:109)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:52)
+
+Apr 28, 2018 3:55:44 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:55:44 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:55:44 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+INFO: Person succesfully returned
+Apr 28, 2018 3:55:44 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:55:44 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:109)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:52)
+
+Apr 28, 2018 3:58:19 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 3:58:19 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:58:19 PM eva.dummy.dao.PersonDAOImp getDatabasePerson
+INFO: Person succesfully returned
+Apr 28, 2018 3:58:19 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 3:58:19 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:109)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:52)
+
+Apr 28, 2018 7:20:06 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:20:08 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:20:08 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.PreparedStatement.checkAllParametersSet(PreparedStatement.java:2211)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:2191)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2058)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:109)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:53)
+
+Apr 28, 2018 7:22:10 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:22:11 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:22:11 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'lastname' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:110)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:53)
+
+Apr 28, 2018 7:23:17 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:23:18 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:23:18 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated
+Apr 28, 2018 7:24:45 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:24:46 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:24:46 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: Data truncated for column 'person_type' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:110)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:53)
+
+Apr 28, 2018 7:25:45 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:25:46 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:25:46 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: Data truncated for column 'person_type' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:110)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:53)
+
+Apr 28, 2018 7:26:41 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 7:26:42 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 7:26:42 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated

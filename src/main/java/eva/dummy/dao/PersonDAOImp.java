@@ -8,6 +8,7 @@ import java.lang.Enum;
 
 import eva.dummy.domain.*;
 import eva.dummy.domain.Person;
+import eva.dummy.domain.Person.TypeOfPerson;
 import eva.dummy.utility.DatabaseConnectionClass;
 import eva.dummy.utility.LogConnection;
 
@@ -29,16 +30,14 @@ public class PersonDAOImp implements PersonDAO {
 				
 				Person.PersonBuilder buildert = new Person.PersonBuilder();
 				
-//param = Enum.valueOf((Class<? extends Enum>)dbField.getField().getType(), (String) param);	
-//	where param is the value of the field in the db , and the dbField 
-				//is the java.reflect.util.Field , where to put the value to
-				
+				if (resultSet.next()) {
 				buildert.setPersonId(resultSet.getInt(1));
-				buildert.setPersonType( Enum.valueOf(TypeOfPerson, resultSet.getString(2)));
-				buildert.setName(resultSet.getString(2));
-				buildert.setLastName(resultSet.getString(3));
+				buildert.setPersonType(TypeOfPerson.valueOf(resultSet.getString(2)));
+				buildert.setName(resultSet.getString(3));
+				buildert.setLastName(resultSet.getString(4));
 				
 				person1 = buildert.build();
+				}
 			}		
 
 			logger.log(Level.INFO, "Person succesfully returned");
@@ -97,7 +96,7 @@ public class PersonDAOImp implements PersonDAO {
 	public Person updateDatabasePerson(Person person) {
 		
 		String tempEnum = "" + person.getPersonType();
-		String query = "UPDATE person SET person_type = ?, name = ?, lastname = ?"
+		String query = "UPDATE person SET person_type = ?, name = ?, last_name = ?"
 				+ "WHERE person_id = ?";
 		
 		try(Connection connection = DatabaseConnectionClass.getConnection();
@@ -106,6 +105,7 @@ public class PersonDAOImp implements PersonDAO {
 				preparedStatement.setString(1, tempEnum);
 				preparedStatement.setString(2, person.getName());
 				preparedStatement.setString(3,  person.getLastName());
+				preparedStatement.setInt(4, person.getPersonId());
 				
 				preparedStatement.executeUpdate();
 				logger.log(Level.INFO, "Person successfully updated");

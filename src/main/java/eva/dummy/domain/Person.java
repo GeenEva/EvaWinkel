@@ -4,7 +4,7 @@ package eva.dummy.domain;
 public class Person {
 	
 	//Enum type
-	public enum TypeOfPerson{BOSS, SLAVE};
+	public enum TypeOfPerson{BOSS, SLAVE, CLOWN};
 	
 	//Data fields for Person
 	private int personId;
