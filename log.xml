@@ -1834,3 +1834,52 @@ Apr 28, 2018 7:26:42 PM eva.dummy.utility.DatabaseConnectionClass getConnection
 INFO: Connected to Database
 Apr 28, 2018 7:26:42 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
 INFO: Person successfully updated
+Apr 28, 2018 8:39:35 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 8:39:36 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 8:39:36 PM eva.dummy.dao.PersonDAOImp deleteDatabasePerson
+WARNING: Person not deleted because of SQL Exception
+java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.checkForDml(StatementImpl.java:469)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at eva.dummy.dao.PersonDAOImp.deleteDatabasePerson(PersonDAOImp.java:136)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:61)
+
+Apr 28, 2018 8:42:11 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 8:42:11 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 8:42:11 PM eva.dummy.dao.PersonDAOImp deleteDatabasePerson
+WARNING: Person not deleted because of SQL Exception
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM person WHERE person_id = 11' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.deleteDatabasePerson(PersonDAOImp.java:136)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:61)
+
+Apr 28, 2018 8:43:09 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 28, 2018 8:43:10 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 28, 2018 8:43:10 PM eva.dummy.dao.PersonDAOImp deleteDatabasePerson
+INFO: Person has been deleted

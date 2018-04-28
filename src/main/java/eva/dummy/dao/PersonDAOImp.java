@@ -3,14 +3,12 @@ package eva.dummy.dao;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.lang.Enum;
 
-
-import eva.dummy.domain.*;
 import eva.dummy.domain.Person;
 import eva.dummy.domain.Person.TypeOfPerson;
 import eva.dummy.utility.DatabaseConnectionClass;
 import eva.dummy.utility.LogConnection;
+
 
 public class PersonDAOImp implements PersonDAO {
 	private Logger logger = LogConnection.getLogger();
@@ -21,12 +19,16 @@ public class PersonDAOImp implements PersonDAO {
 		Person person1 = new Person.PersonBuilder().build(); 
 		String query = "SELECT * FROM person WHERE person_id = ?";
 
-		try(Connection connection = DatabaseConnectionClass.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(query); ) {
+		try(
+			Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(query); 
+			) {
 
 			preparedStatement.setInt(1, person.getPersonId());
 
-			try (ResultSet resultSet = preparedStatement.executeQuery();) {
+			try (
+				ResultSet resultSet = preparedStatement.executeQuery();
+				) {
 				
 				Person.PersonBuilder buildert = new Person.PersonBuilder();
 				
@@ -41,6 +43,7 @@ public class PersonDAOImp implements PersonDAO {
 			}		
 
 			logger.log(Level.INFO, "Person succesfully returned");
+			
 			return person1;
 
 		} catch (SQLException e) {
@@ -58,9 +61,11 @@ public class PersonDAOImp implements PersonDAO {
 		int generatedId = 0;
 		String query = "INSERT INTO person (person_type, name, last_name) VALUES (?,?,?)";
 
-		try (Connection connection = DatabaseConnectionClass.getConnection();
-				PreparedStatement preparedStatement = connection.prepareStatement(query,
-						PreparedStatement.RETURN_GENERATED_KEYS);) 	{
+		try (
+			Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(
+					query,PreparedStatement.RETURN_GENERATED_KEYS);
+			) {
 			
 			preparedStatement.setString(1, tempForEnum);
 			preparedStatement.setString(2, person.getName());
@@ -79,7 +84,7 @@ public class PersonDAOImp implements PersonDAO {
 					logger.log(Level.INFO, "Key succesfully generated");
 					
 					Person.PersonBuilder buildert = new Person.PersonBuilder().setPersonId(generatedId).
-							setPersonType(person.getPersonType()).setName(person.getName()).setLastName(person.getLastName());
+						setPersonType(person.getPersonType()).setName(person.getName()).setLastName(person.getLastName());
 					
 					person = buildert.build();
 				}
@@ -99,8 +104,10 @@ public class PersonDAOImp implements PersonDAO {
 		String query = "UPDATE person SET person_type = ?, name = ?, last_name = ?"
 				+ "WHERE person_id = ?";
 		
-		try(Connection connection = DatabaseConnectionClass.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(query);) {
+		try(
+			Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+				) {
 			
 				preparedStatement.setString(1, tempEnum);
 				preparedStatement.setString(2, person.getName());
@@ -117,9 +124,25 @@ public class PersonDAOImp implements PersonDAO {
 		return null;
 	}
 
-	public Person deleteDatabasePerson(Person person) {
-		// TODO Auto-generated method stub
-		return null;
+	public void deleteDatabasePerson(Person person) {
+		
+		String query = "DELETE FROM person WHERE person_id = ?";
+		
+		try(
+			Connection connection = DatabaseConnectionClass.getConnection();
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+				) {
+			preparedStatement.setInt(1, person.getPersonId());
+			preparedStatement.executeUpdate();
+			
+			logger.log(Level.INFO, "Person has been deleted");
+			System.out.println("Person has been deleted from the database.");
+			
+		}
+		catch(SQLException e) {
+			logger.log(Level.WARNING, "Person not deleted because of SQL Exception", e);
+		}
+		
 	}
 
 }

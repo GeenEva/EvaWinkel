@@ -8,6 +8,6 @@ public interface PersonDAO {
 	public Person getDatabasePerson(Person person);
 	public Person createDatabasePerson(Person person);
 	public Person updateDatabasePerson(Person person);
-	public Person deleteDatabasePerson(Person person);
+	public void deleteDatabasePerson(Person person);
 	
 }

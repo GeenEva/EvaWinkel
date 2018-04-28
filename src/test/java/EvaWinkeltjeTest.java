@@ -45,6 +45,8 @@ public class EvaWinkeltjeTest {
 		
 	System.out.println(persontje4.toString());
 	*/
+		
+		/*
 		PersonDAO personDAO = new PersonDAOImp();
 		Person person5 = new Person.PersonBuilder().setPersonId(10).
 				setPersonType(TypeOfPerson.CLOWN).
@@ -52,7 +54,11 @@ public class EvaWinkeltjeTest {
 	
 		personDAO.updateDatabasePerson(person5);
 		
+		*/
+		PersonDAO personDAO = new PersonDAOImp();
+		Person person6 = new Person.PersonBuilder().setPersonId(11).build();
 		
+		personDAO.deleteDatabasePerson(person6);
 	
 	}
 }
