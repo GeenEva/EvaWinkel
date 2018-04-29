@@ -56,7 +56,6 @@ public class PersonDAOImp implements PersonDAO {
 
 	public Person createDatabasePerson(Person person) {
 		
-		String tempForEnum = "" + (person.getPersonType());
 		
 		int generatedId = 0;
 		String query = "INSERT INTO person (person_type, name, last_name) VALUES (?,?,?)";
@@ -67,7 +66,7 @@ public class PersonDAOImp implements PersonDAO {
 					query,PreparedStatement.RETURN_GENERATED_KEYS);
 			) {
 			
-			preparedStatement.setString(1, tempForEnum);
+			preparedStatement.setString(1, String.valueOf(person.getPersonType()));
 			preparedStatement.setString(2, person.getName());
 			preparedStatement.setString(3, person.getLastName());
 			
@@ -100,7 +99,12 @@ public class PersonDAOImp implements PersonDAO {
 
 	public Person updateDatabasePerson(Person person) {
 		
-		String tempEnum = "" + person.getPersonType();
+		//right now this method works only with all fields provided
+		//for better result:
+		//first get person from the database (by lastname? or id?)
+		//create person object from result set
+		//then update with UPDATE query as follows
+		
 		String query = "UPDATE person SET person_type = ?, name = ?, last_name = ?"
 				+ "WHERE person_id = ?";
 		
@@ -109,7 +113,7 @@ public class PersonDAOImp implements PersonDAO {
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 				) {
 			
-				preparedStatement.setString(1, tempEnum);
+				preparedStatement.setString(1, String.valueOf(person.getPersonType()));
 				preparedStatement.setString(2, person.getName());
 				preparedStatement.setString(3,  person.getLastName());
 				preparedStatement.setInt(4, person.getPersonId());

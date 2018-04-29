@@ -5,8 +5,11 @@ import eva.dummy.domain.Person.*;
 public class EvaWinkeltjeTest {
 	public static void main(String[] args) {
 		/*
+		
+		PersonDAO personDAO = new PersonDAOImp();
+		
 		Person persontje = new Person.PersonBuilder().
-				setPersonType(TypeOfPerson.BOSS).setName("Lotje").setLastName("Lepel").build();
+				setPersonType(TypeOfPerson.BOSS).setName("Juanita").setLastName("Klomp").build();
 		
 	
 		System.out.println(persontje.toString());
@@ -18,9 +21,9 @@ public class EvaWinkeltjeTest {
 	System.out.println(persontje2.toString());
 		
 		Address addressJe = new Address();
-		addressJe.setStreet("Rijnstraat");
-		addressJe.setZipcode("1234AZ");
-		addressJe.setCity("Rotterdam");
+		addressJe.setStreet("KadaKade");
+		addressJe.setZipcode("1342ZP");
+		addressJe.setCity("Zwijndrecht");
 		
 		AddressDAO addressDAO = new AddressDAOImp();
 		
@@ -28,11 +31,11 @@ public class EvaWinkeltjeTest {
 		
 		System.out.println(persontje2.toString() + " " + addressJe2.toString());
 		
-		
-		Person persontje3 = new Person.PersonBuilder().
-				setPersonType(TypeOfPerson.SLAVE).setName("Piet").setLastName("de Vork").build();
 		*/
 		/*
+		Person persontje3 = new Person.PersonBuilder().
+				setPersonType(TypeOfPerson.SLAVE).setName("Piet").setLastName("de Vork").build();
+		
 		PersonDAO personDAO = new PersonDAOImp();
 		
 		Person persontje3 = new Person.PersonBuilder().setPersonId(13).build();
@@ -46,19 +49,22 @@ public class EvaWinkeltjeTest {
 	System.out.println(persontje4.toString());
 	*/
 		
-		/*
+	//	/*
+		
+		// Update persoon kan alleen met 'compleet' persoon
 		PersonDAO personDAO = new PersonDAOImp();
-		Person person5 = new Person.PersonBuilder().setPersonId(10).
-				setPersonType(TypeOfPerson.CLOWN).
-				setName("Aardbei").setLastName("Dreumes").build();
+		Person person5 = new Person.PersonBuilder().setPersonId(14).
+				setPersonType(TypeOfPerson.CLOWN).setName("Roy").setLastName("Joy").
+			build();
 	
 		personDAO.updateDatabasePerson(person5);
 		
-		*/
+	//	*/
+		/*
 		PersonDAO personDAO = new PersonDAOImp();
 		Person person6 = new Person.PersonBuilder().setPersonId(11).build();
 		
 		personDAO.deleteDatabasePerson(person6);
-	
+		*/
 	}
 }

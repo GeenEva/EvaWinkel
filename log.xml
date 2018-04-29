@@ -1883,3 +1883,256 @@ Apr 28, 2018 8:43:10 PM eva.dummy.utility.DatabaseConnectionClass getConnection
 INFO: Connected to Database
 Apr 28, 2018 8:43:10 PM eva.dummy.dao.PersonDAOImp deleteDatabasePerson
 INFO: Person has been deleted
+Apr 29, 2018 9:39:48 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:39:49 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:39:49 AM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Person succesfully created
+Apr 29, 2018 9:39:49 AM eva.dummy.dao.PersonDAOImp createDatabasePerson
+INFO: Key succesfully generated
+Apr 29, 2018 9:39:49 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:39:49 AM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+INFO: Person succesfully created
+Apr 29, 2018 9:39:49 AM eva.dummy.dao.AddressDAOImp createDatabaseAddress
+WARNING: SQL Exception occured while trying to make an address
+java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2475)
+	at eva.dummy.dao.AddressDAOImp.createDatabaseAddress(AddressDAOImp.java:77)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:30)
+
+Apr 29, 2018 9:43:33 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:43:34 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:43:34 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 9' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:57)
+
+Apr 29, 2018 9:44:08 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:44:08 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:44:08 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:57)
+
+Apr 29, 2018 9:46:45 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:46:45 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:46:45 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.checkForDml(StatementImpl.java:469)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:57)
+
+Apr 29, 2018 9:47:45 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:47:45 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:47:45 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:57)
+
+Apr 29, 2018 9:49:03 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:49:03 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:49:03 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:57)
+
+Apr 29, 2018 9:49:59 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:50:00 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:50:00 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated
+Apr 29, 2018 9:50:45 AM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 9:50:45 AM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 9:50:45 AM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:58)
+
+Apr 29, 2018 12:04:25 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 12:04:25 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 12:04:25 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated
+Apr 29, 2018 12:04:44 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 12:04:45 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 12:04:45 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated
+Apr 29, 2018 12:04:56 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 12:04:56 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 12:04:56 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:60)
+
+Apr 29, 2018 12:05:08 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 12:05:08 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 12:05:08 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+WARNING: Person couldn't been updated
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'person_id = 14' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at eva.dummy.dao.PersonDAOImp.updateDatabasePerson(PersonDAOImp.java:116)
+	at EvaWinkeltjeTest.main(EvaWinkeltjeTest.java:60)
+
+Apr 29, 2018 12:06:49 PM eva.dummy.utility.DatabaseConnectionClass initializeXML
+CONFIG: Xml file exist, parsing is succesfull.
+Apr 29, 2018 12:06:49 PM eva.dummy.utility.DatabaseConnectionClass getConnection
+INFO: Connected to Database
+Apr 29, 2018 12:06:49 PM eva.dummy.dao.PersonDAOImp updateDatabasePerson
+INFO: Person successfully updated
