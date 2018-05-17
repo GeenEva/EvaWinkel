@@ -1,11 +1,11 @@
 package eva.dummy.dao;
 
-import eva.dummy.domain.Address;
-import eva.dummy.domain.Person;
+import eva.dummy.domain.EvaAddress;
+import eva.dummy.domain.EvaPerson;
 
 public interface AddressDAO {
-	public Address getDatabaseAddress(Person peron);
-	public Address createDatabaseAddress(Address address, Person person);
-	public Address updateDatabaseAddress(Address address);
-	public Address deleteDatabaseAddress(Address address);
+	public EvaAddress getDatabaseAddress(EvaPerson peron);
+	public EvaAddress createDatabaseAddress(EvaAddress address, EvaPerson person);
+	public EvaAddress updateDatabaseAddress(EvaAddress address);
+	public EvaAddress deleteDatabaseAddress(EvaAddress address);
 }

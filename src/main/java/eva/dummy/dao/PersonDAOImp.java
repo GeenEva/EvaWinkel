@@ -4,8 +4,8 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import eva.dummy.domain.Person;
-import eva.dummy.domain.Person.TypeOfPerson;
+import eva.dummy.domain.EvaPerson;
+import eva.dummy.domain.EvaPerson.TypeOfPerson;
 import eva.dummy.utility.DatabaseConnectionClass;
 import eva.dummy.utility.LogConnection;
 
@@ -14,9 +14,9 @@ public class PersonDAOImp implements PersonDAO {
 	private Logger logger = LogConnection.getLogger();
 
 
-	public Person getDatabasePerson(Person person) {
+	public EvaPerson getDatabasePerson(EvaPerson person) {
 
-		Person person1 = new Person.PersonBuilder().build(); 
+		EvaPerson person1 = new EvaPerson.PersonBuilder().build(); 
 		String query = "SELECT * FROM person WHERE person_id = ?";
 
 		try(
@@ -30,7 +30,7 @@ public class PersonDAOImp implements PersonDAO {
 				ResultSet resultSet = preparedStatement.executeQuery();
 				) {
 				
-				Person.PersonBuilder buildert = new Person.PersonBuilder();
+				EvaPerson.PersonBuilder buildert = new EvaPerson.PersonBuilder();
 				
 				if (resultSet.next()) {
 				buildert.setPersonId(resultSet.getInt(1));
@@ -42,7 +42,7 @@ public class PersonDAOImp implements PersonDAO {
 				}
 			}		
 
-			logger.log(Level.INFO, "Person succesfully returned");
+			logger.log(Level.INFO, "EvaPerson succesfully returned");
 			
 			return person1;
 
@@ -54,7 +54,7 @@ public class PersonDAOImp implements PersonDAO {
 
 
 
-	public Person createDatabasePerson(Person person) {
+	public EvaPerson createDatabasePerson(EvaPerson person) {
 		
 		
 		int generatedId = 0;
@@ -72,8 +72,8 @@ public class PersonDAOImp implements PersonDAO {
 			
 			preparedStatement.executeUpdate();
 
-			System.out.println("Person succesfully created");
-			logger.log(Level.INFO, "Person succesfully created");
+			System.out.println("EvaPerson succesfully created");
+			logger.log(Level.INFO, "EvaPerson succesfully created");
 
 			try (ResultSet resultSet = preparedStatement.getGeneratedKeys()) {
 
@@ -82,7 +82,7 @@ public class PersonDAOImp implements PersonDAO {
 					generatedId = resultSet.getInt(1);
 					logger.log(Level.INFO, "Key succesfully generated");
 					
-					Person.PersonBuilder buildert = new Person.PersonBuilder().setPersonId(generatedId).
+					EvaPerson.PersonBuilder buildert = new EvaPerson.PersonBuilder().setPersonId(generatedId).
 						setPersonType(person.getPersonType()).setName(person.getName()).setLastName(person.getLastName());
 					
 					person = buildert.build();
@@ -90,14 +90,14 @@ public class PersonDAOImp implements PersonDAO {
 			}
 
 		} catch (SQLException e) {
-			logger.log(Level.WARNING, "Person was not created", e);
+			logger.log(Level.WARNING, "EvaPerson was not created", e);
 		}
 
 		return person;
 	}
 
 
-	public Person updateDatabasePerson(Person person) {
+	public EvaPerson updateDatabasePerson(EvaPerson person) {
 		
 		//right now this method works only with all fields provided
 		//for better result:
@@ -119,16 +119,16 @@ public class PersonDAOImp implements PersonDAO {
 				preparedStatement.setInt(4, person.getPersonId());
 				
 				preparedStatement.executeUpdate();
-				logger.log(Level.INFO, "Person successfully updated");
+				logger.log(Level.INFO, "EvaPerson successfully updated");
 				
 				
 		} catch(SQLException e) {
-			logger.log(Level.WARNING, "Person couldn't been updated", e);
+			logger.log(Level.WARNING, "EvaPerson couldn't been updated", e);
 		}
 		return null;
 	}
 
-	public void deleteDatabasePerson(Person person) {
+	public void deleteDatabasePerson(EvaPerson person) {
 		
 		String query = "DELETE FROM person WHERE person_id = ?";
 		
@@ -139,12 +139,12 @@ public class PersonDAOImp implements PersonDAO {
 			preparedStatement.setInt(1, person.getPersonId());
 			preparedStatement.executeUpdate();
 			
-			logger.log(Level.INFO, "Person has been deleted");
-			System.out.println("Person has been deleted from the database.");
+			logger.log(Level.INFO, "EvaPerson has been deleted");
+			System.out.println("EvaPerson has been deleted from the database.");
 			
 		}
 		catch(SQLException e) {
-			logger.log(Level.WARNING, "Person not deleted because of SQL Exception", e);
+			logger.log(Level.WARNING, "EvaPerson not deleted because of SQL Exception", e);
 		}
 		
 	}

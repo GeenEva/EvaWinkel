@@ -1,21 +1,21 @@
 package eva.dummy.domain;
 
 
-public class Person {
+public class EvaPerson {
 	
 	//Enum type
 	public enum TypeOfPerson{BOSS, SLAVE, CLOWN};
 	
-	//Data fields for Person
+	//Data fields for EvaPerson
 	private int personId;
 	private TypeOfPerson personType;
 	private String name;
 	private String lastName;
 	
-	//Constructor for Person with a builder object as a parameter
-	//setting the Person fields as the value given by builder
+	//Constructor for EvaPerson with a builder object as a parameter
+	//setting the EvaPerson fields as the value given by builder
 	
-	private Person(PersonBuilder builder) {
+	private EvaPerson(PersonBuilder builder) {
 		
 		this.personId = builder.personId;
 		this.personType = builder.personType;
@@ -38,8 +38,8 @@ public class Person {
 			}
 	
 			
-			//Constructor with Person class as parameter
-			public PersonBuilder(Person person) {
+			//Constructor with EvaPerson class as parameter
+			public PersonBuilder(EvaPerson person) {
 		
 				this.personId = person.personId;
 				this.personType = person.personType;
@@ -69,17 +69,17 @@ public class Person {
 				return this;
 			}
 			
-			//Build method that gives a Person back
+			//Build method that gives a EvaPerson back
 			
-			public Person build() {
-				return new Person(this);
+			public EvaPerson build() {
+				return new EvaPerson(this);
 			}
 		}
 		
 		//Builder class ends here
 	
 		
-	//Getters for Person
+	//Getters for EvaPerson
 	
 	
 	public int getPersonId() {
@@ -102,7 +102,7 @@ public class Person {
 	@Override
 	public String toString() {
 		
-		return "Person id = " + this.getPersonId() + ", Person type = " + this.getPersonType() +
+		return "EvaPerson id = " + this.getPersonId() + ", EvaPerson type = " + this.getPersonType() +
 				", Name = " + this.getName() + ", Last name = " + this.getLastName() + " ";
 	}
 	
@@ -114,7 +114,7 @@ public class Person {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Person other = (Person) obj;
+		EvaPerson other = (EvaPerson) obj;
 		if (personId != other.personId)
 			return false;
 		return true;

@@ -1,6 +1,6 @@
 import eva.dummy.dao.*;
 import eva.dummy.domain.*;
-import eva.dummy.domain.Person.*;
+import eva.dummy.domain.EvaPerson.*;
 
 public class EvaWinkeltjeTest {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class EvaWinkeltjeTest {
 		
 		PersonDAO personDAO = new PersonDAOImp();
 		
-		Person persontje = new Person.PersonBuilder().
+		EvaPerson persontje = new EvaPerson.PersonBuilder().
 				setPersonType(TypeOfPerson.BOSS).setName("Juanita").setLastName("Klomp").build();
 		
 	
@@ -16,33 +16,33 @@ public class EvaWinkeltjeTest {
 		
 		
 		
-		Person persontje2 = personDAO.createDatabasePerson(persontje);
+		EvaPerson persontje2 = personDAO.createDatabasePerson(persontje);
 		
 	System.out.println(persontje2.toString());
 		
-		Address addressJe = new Address();
+		EvaAddress addressJe = new EvaAddress();
 		addressJe.setStreet("KadaKade");
 		addressJe.setZipcode("1342ZP");
 		addressJe.setCity("Zwijndrecht");
 		
 		AddressDAO addressDAO = new AddressDAOImp();
 		
-		Address addressJe2 = addressDAO.createDatabaseAddress(addressJe, persontje2);
+		EvaAddress addressJe2 = addressDAO.createDatabaseAddress(addressJe, persontje2);
 		
 		System.out.println(persontje2.toString() + " " + addressJe2.toString());
 		
 		*/
 		/*
-		Person persontje3 = new Person.PersonBuilder().
+		EvaPerson persontje3 = new EvaPerson.PersonBuilder().
 				setPersonType(TypeOfPerson.SLAVE).setName("Piet").setLastName("de Vork").build();
 		
 		PersonDAO personDAO = new PersonDAOImp();
 		
-		Person persontje3 = new Person.PersonBuilder().setPersonId(13).build();
+		EvaPerson persontje3 = new EvaPerson.PersonBuilder().setPersonId(13).build();
 		
 	System.out.println(persontje3.toString());	
 	
-		Person persontje4 = personDAO.getDatabasePerson(persontje3);
+		EvaPerson persontje4 = personDAO.getDatabasePerson(persontje3);
 		
 		
 		
@@ -53,7 +53,7 @@ public class EvaWinkeltjeTest {
 		
 		// Update persoon kan alleen met 'compleet' persoon
 		PersonDAO personDAO = new PersonDAOImp();
-		Person person5 = new Person.PersonBuilder().setPersonId(14).
+		EvaPerson person5 = new EvaPerson.PersonBuilder().setPersonId(14).
 				setPersonType(TypeOfPerson.CLOWN).setName("Roy").setLastName("Joy").
 			build();
 	
@@ -62,7 +62,7 @@ public class EvaWinkeltjeTest {
 	//	*/
 		/*
 		PersonDAO personDAO = new PersonDAOImp();
-		Person person6 = new Person.PersonBuilder().setPersonId(11).build();
+		EvaPerson person6 = new EvaPerson.PersonBuilder().setPersonId(11).build();
 		
 		personDAO.deleteDatabasePerson(person6);
 		*/

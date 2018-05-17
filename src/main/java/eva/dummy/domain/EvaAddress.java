@@ -1,6 +1,6 @@
 package eva.dummy.domain;
 
-public class Address {
+public class EvaAddress {
 	
 	private int addressId;
 	private String street;

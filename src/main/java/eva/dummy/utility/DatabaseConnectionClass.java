@@ -25,7 +25,7 @@ public class DatabaseConnectionClass {
 	private static String PASSWORD;
 	
 	public static void initializeXML() {
-		File xmlFile = new File("src/main/java/eva/dummy/utility/DatabaseConnectionFile.xml");
+		File xmlFile = new File("src/main/java/eva/dummy/utility/SQLDBConnection.xml");
 		
 		if(xmlFile.exists()) {
 			

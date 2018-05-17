@@ -17,10 +17,10 @@ public class AddressDAOImp implements AddressDAO{
 	private Logger logger = LogConnection.getLogger();
 	
 	
-	public Address getDatabaseAddress(Person person) {
+	public EvaAddress getDatabaseAddress(EvaPerson person) {
 		
 		String query = "SELECT * FROM address WHERE person_id = ?";
-		Address address1 = new Address();
+		EvaAddress address1 = new EvaAddress();
 	
 		try (
 				Connection connection = DatabaseConnectionClass.getConnection();
@@ -53,7 +53,7 @@ public class AddressDAOImp implements AddressDAO{
 	}
 	
 
-	public Address createDatabaseAddress(Address address, Person person) {
+	public EvaAddress createDatabaseAddress(EvaAddress address, EvaPerson person) {
 		
 		String query = "INSERT INTO address (street, zipcode, city, person_id) VALUES (?,?,?,?)";
 		
@@ -69,8 +69,8 @@ public class AddressDAOImp implements AddressDAO{
 			
 			preparedStatement.executeUpdate();
 			
-			System.out.println("Person succesfully created");
-			logger.log(Level.INFO, "Person succesfully created");
+			System.out.println("EvaPerson succesfully created");
+			logger.log(Level.INFO, "EvaPerson succesfully created");
 			
 			try (ResultSet resultSet = preparedStatement.getGeneratedKeys()) {
 				
@@ -89,12 +89,12 @@ public class AddressDAOImp implements AddressDAO{
 	
 	
 
-	public Address updateDatabaseAddress(Address address) {
+	public EvaAddress updateDatabaseAddress(EvaAddress address) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Address deleteDatabaseAddress(Address address) {
+	public EvaAddress deleteDatabaseAddress(EvaAddress address) {
 		// TODO Auto-generated method stub
 		return null;
 	}

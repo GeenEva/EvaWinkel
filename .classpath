@@ -23,5 +23,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/evavangeenen/eclipse-workspace/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar"/>
+	<classpathentry kind="lib" path="/Users/evavangeenen/eclipse-workspace/EvaWinkel/mongodb-driver-3.8.0-beta2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/evavangeenen/eclipse-workspace/EvaWinkel/mongo-java-driver-3.8.0-beta2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
