@@ -20,8 +20,6 @@ public class EvaMainMenu {
 	
 	MongoDatabase mongoDb = mongoClient.getDatabase("tryoutdb");
 	MongoCollection<Document> dbCollection = mongoDb.getCollection("users");
-	
-	//MongoCursor cursortje =  
 			
 	MongoCursor <Document> cursor = dbCollection.find().iterator();
 	

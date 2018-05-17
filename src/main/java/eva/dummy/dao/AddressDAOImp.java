@@ -23,7 +23,7 @@ public class AddressDAOImp implements AddressDAO{
 		EvaAddress address1 = new EvaAddress();
 	
 		try (
-				Connection connection = DatabaseConnectionClass.getConnection();
+				Connection connection = DatabaseConnectionClass.getSQLConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(query,
 						PreparedStatement.RETURN_GENERATED_KEYS); ) 
 			{
@@ -58,7 +58,7 @@ public class AddressDAOImp implements AddressDAO{
 		String query = "INSERT INTO address (street, zipcode, city, person_id) VALUES (?,?,?,?)";
 		
 		try (
-			Connection connection = DatabaseConnectionClass.getConnection();
+			Connection connection = DatabaseConnectionClass.getSQLConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement(query,
 					PreparedStatement.RETURN_GENERATED_KEYS);) {
 		

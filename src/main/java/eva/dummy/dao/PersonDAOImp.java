@@ -20,7 +20,7 @@ public class PersonDAOImp implements PersonDAO {
 		String query = "SELECT * FROM person WHERE person_id = ?";
 
 		try(
-			Connection connection = DatabaseConnectionClass.getConnection();
+			Connection connection = DatabaseConnectionClass.getSQLConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement(query); 
 			) {
 
@@ -61,7 +61,7 @@ public class PersonDAOImp implements PersonDAO {
 		String query = "INSERT INTO person (person_type, name, last_name) VALUES (?,?,?)";
 
 		try (
-			Connection connection = DatabaseConnectionClass.getConnection();
+			Connection connection = DatabaseConnectionClass.getSQLConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement(
 					query,PreparedStatement.RETURN_GENERATED_KEYS);
 			) {
@@ -109,7 +109,7 @@ public class PersonDAOImp implements PersonDAO {
 				+ "WHERE person_id = ?";
 		
 		try(
-			Connection connection = DatabaseConnectionClass.getConnection();
+			Connection connection = DatabaseConnectionClass.getSQLConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 				) {
 			
@@ -133,7 +133,7 @@ public class PersonDAOImp implements PersonDAO {
 		String query = "DELETE FROM person WHERE person_id = ?";
 		
 		try(
-			Connection connection = DatabaseConnectionClass.getConnection();
+			Connection connection = DatabaseConnectionClass.getSQLConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 				) {
 			preparedStatement.setInt(1, person.getPersonId());
